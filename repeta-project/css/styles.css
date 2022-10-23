@@ -1,45 +1,83 @@
-body {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.list {
-  list-style: none;
-}
-
 /* цвет остновного текста #000000 */
 /* вторичный цвет текста rgba(0, 0, 0, 0.8); */
 /* белый #FFFFFF */
 /* акцент #18A0FB;*/
 /* вторичный цвет фона #F5F5F5; */
 
+
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-text-color: #18A0FB;
+  --primary-white-color: #FFFFFF;
+}
+
+
+
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
 .logo {
-  color: #000000;
+  color: var(--title-text-color);
 }
 
 .logo:hover {
-  color: #18A0FB;
+  color: var(--accent-text-color);
 }
 
-/* site nav */
+/* Site nav */
 
 .site-nav .link {
-  color: #18A0FB;
+  color: var(--accent-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #000000;
+  color: var(--title-text-color);
 }
 
-/* hero */
+/* Hero */
 
 .hero-title {
-  color: #000000;
+  color: var(--title-text-color);
 }
 
-/* section */
+/* Section */
 
 .section-title {
-  color: #000000;
+  color: var(--title-text-color);
+}
+
+/* Featuers */
+
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+.work-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+}
+
+.button.secondary {
+  color: var(--accent-text-color);
+  background-color: var(--primary-white-color);
 }
