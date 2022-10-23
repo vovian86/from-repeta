@@ -1,12 +1,45 @@
-.test-link {
-  color: black;
+body {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.test-link:hover,
-.test-link:focus {
-  color: tomato;
+.list {
+  list-style: none;
 }
 
-.test-link:active {
-  color: teal;
+/* цвет остновного текста #000000 */
+/* вторичный цвет текста rgba(0, 0, 0, 0.8); */
+/* белый #FFFFFF */
+/* акцент #18A0FB;*/
+/* вторичный цвет фона #F5F5F5; */
+
+.logo {
+  color: #000000;
+}
+
+.logo:hover {
+  color: #18A0FB;
+}
+
+/* site nav */
+
+.site-nav .link {
+  color: #18A0FB;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #000000;
+}
+
+/* hero */
+
+.hero-title {
+  color: #000000;
+}
+
+/* section */
+
+.section-title {
+  color: #000000;
 }
